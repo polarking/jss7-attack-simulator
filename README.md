@@ -28,7 +28,7 @@ The latest build can be downloaded from [here](https://drive.google.com/file/d/0
 
 How to run the simulator:
 
-* The simulator needs a working Java environment.
+* The simulator needs a working Java environment (Preferably openjdk-8-jre).
 * Make sure you have SCTP support installed on Linux:
   * Fedora: lksctp-tools and kernel-modules-extra.
   * Ubuntu: libsctp1 and lksctp-tools.
@@ -64,3 +64,38 @@ The currently supported simple attacks are:
 
 Building from source can be done by using the instructions for jSS7, which can
 be found [here](https://github.com/RestComm/jss7/wiki/Build-jSS7-from-Source).
+
+## Fixing "Error: Could not create the Java Virtual Machine."
+
+If you download the last built project and attempt to run it you may receive an error message like "Error: Could not create the Java Virtual Machine.". This is likely due to the fact that the run script (run.sh, run.bat, etc.) is using a newer version of Java than the simulator supports. To fix the issue perform the following:
+
+1. Install Java version 8 (e.g. apt-get install -y openjdk-8-jre)
+2. If multiple version of Java are installed, modify the run script to use the Java version 8 binary like so:
+
+File: run.sh
+
+Lines: 91-98
+
+Before:
+```
+# Setup the JVM
+if [ "x$JAVA" = "x" ]; then
+    if [ "x$JAVA_HOME" != "x" ]; then
+	JAVA="$JAVA_HOME/bin/java"
+    else
+	JAVA="java"
+    fi
+fi
+```
+
+After:
+```
+# Setup the JVM
+if [ "x$JAVA" = "x" ]; then
+    if [ "x$JAVA_HOME" != "x" ]; then
+	    JAVA="$JAVA_HOME/bin/java"
+    else
+	    JAVA="/usr/lib/jvm/java-8-openjdk-amd64/bin/java"
+    fi
+fi
+```
