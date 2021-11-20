@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is currenlty not maintained and may not build, I've made available the latest build [here](https://drive.google.com/file/d/0B5wpGwi_jRR5a1pUZ2laWnA0WmM/view?usp=sharing).
+This project is currenlty not maintained and may not build, I've made available the latest build [here](https://drive.google.com/file/d/0B5wpGwi_jRR5a1pUZ2laWnA0WmM/view?usp=drivesdk&resourcekey=0-p-bygW5WPF79Lc5tniAyGA).
 
 Open Source Java SS7 attack simulator that makes it possible to simulate some publicly disclosed attacks on the SS7 network.
 
