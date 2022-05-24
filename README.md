@@ -22,7 +22,7 @@ SS7 Attack Simulator is licensed under the Free Open Source [GNU Affero GPL v3.0
 
 ## Downloads
 
-The latest build can be downloaded from [here](https://drive.google.com/file/d/0B5wpGwi_jRR5a1pUZ2laWnA0WmM/view?usp=sharing).
+The latest build can be downloaded from [here](https://www.dropbox.com/s/rjeucp1vnywx2ks/ss7-attack-simulator.tar.gz?dl=0).
 
 ## Instructions
 
