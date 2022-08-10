@@ -32,7 +32,7 @@ How to run the simulator:
 * Make sure you have SCTP support installed on Linux:
   * Fedora: lksctp-tools and kernel-modules-extra.
   * Ubuntu: libsctp1 and lksctp-tools.
-* Download latest build [here](https://drive.google.com/file/d/0B5wpGwi_jRR5a1pUZ2laWnA0WmM/view?usp=sharing).
+* Download latest build [here](https://www.dropbox.com/s/rjeucp1vnywx2ks/ss7-attack-simulator.tar.gz?dl=0).
 * Unzip the file.
 * The simulator is launched with the script:
 
